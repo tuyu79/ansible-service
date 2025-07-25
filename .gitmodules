@@ -1,0 +1,3 @@
+[submodule "roles/solana-rpc-ansible"]
+	path = roles/solana-rpc-ansible
+	url = https://github.com/tuyu79/solana-rpc-ansible.git
