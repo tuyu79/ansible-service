@@ -11,10 +11,14 @@ sudo mkfs -t ext4 /dev/nvme1n1
 
 # 创建目录并挂载磁盘到目录下
 sudo mkdir -p /solana/ledger
-sudo mount /dev/nvme2n1 /solana/ledger
+sudo mount /dev/nvme0n1p1 /solana/ledger
 
 sudo mkdir -p /solana/accounts
-sudo mount /dev/nvme1n1 /mnt/accounts
+sudo mount /dev/nvme0n1p1 /solana/accounts
+
+# 取消挂载
+#sudo umount /dev/nvme0n1p1
+#sudo umount /dev/nvme1n1p1
 
 df -h
 ```
